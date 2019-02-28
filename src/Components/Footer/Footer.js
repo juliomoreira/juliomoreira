@@ -11,8 +11,8 @@ const Footer = () => {
               <span className="icon icon_heart" title="Love">
                 &#10084;
               </span>
-              in Porto Alegre for the world,{" "}
-              <a href="//github.com/juliomoreira/juliomoreira.github.io" title="View the code on GitHub">
+              for the world,{" "}
+              <a href="//github.com/juliomoreira/juliomoreira.github.io" target="_blank" rel="noopener noreferrer">
                 grab the code here
               </a>
               .
