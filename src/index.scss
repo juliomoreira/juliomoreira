@@ -11,7 +11,7 @@ html {
 }
 
 .smaller {
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 svg {
@@ -30,7 +30,8 @@ svg {
     &-toggler {
       // color: $primary;
     }
-    &-brand {}
+    &-brand {
+    }
   }
 }
 
@@ -41,36 +42,35 @@ svg {
   width: 100%;
 }
 
-@media ( min-width: $wide ) {
-
+@media (min-width: $wide) {
   .header.fixed {
-      transition: background-color 500ms ease-in-out;
-      background-color: rgba( 234, 215, 163, .8);
-      .menu {
-          padding: 0.9375em 1.375em;
+    transition: background-color 500ms ease-in-out;
+    background-color: rgba(234, 215, 163, 0.8);
+    .menu {
+      padding: 0.9375em 1.375em;
+    }
+    .menu__button {
+      box-shadow: inset 0 0 0 2px rgba(71, 30, 35, 0);
+      background-color: rgba(116, 49, 50, 0);
+      color: rgba(116, 49, 50, 1);
+      &:hover {
+        background-color: rgba(116, 49, 50, 1);
+        color: rgba(234, 215, 163, 1);
       }
-      .menu__button {
-          box-shadow: inset 0 0 0 2px rgba( 71, 30, 35, 0);
-          background-color: rgba( 116, 49, 50, 0);
-          color: rgba( 116, 49, 50, 1);
-          &:hover {
-              background-color: rgba( 116, 49, 50, 1);
-              color: rgba( 234, 215, 163, 1);
-          }
-          &:active, &.active {
-              background-color: rgba( 116, 49, 50, 0);
-              box-shadow: inset 0 0 0 2px rgba( 71, 30, 35, 1);
-              color: rgba( 71, 30, 35, 1);
-          }
+      &:active,
+      &.active {
+        background-color: rgba(116, 49, 50, 0);
+        box-shadow: inset 0 0 0 2px rgba(71, 30, 35, 1);
+        color: rgba(71, 30, 35, 1);
       }
-      .menu__item_home .menu__link{
-          height: 5.125em;
-      }
-      .logo {
-          color: $primary;
-      }
+    }
+    .menu__item_home .menu__link {
+      height: 5.125em;
+    }
+    .logo {
+      color: $primary;
+    }
   }
-
 }
 
 .menu-handler {
@@ -82,22 +82,20 @@ svg {
   width: 2em;
 }
 
-@media ( max-width: $wide ) {
-
+@media (max-width: $wide) {
   .menu-handler {
-      display: block;
+    display: block;
   }
 
   .menu-handler_show {
-      position: fixed;
-      z-index: 60;
+    position: fixed;
+    z-index: 60;
   }
 
   .menu-handler_close {
-      position: absolute;
-      z-index: 80;
+    position: absolute;
+    z-index: 80;
   }
-
 }
 
 .bottom {
@@ -108,7 +106,7 @@ svg {
   width: 100%;
   right: 0;
   @include media-breakpoint-up(lg) {
-    background-image: linear-gradient( to bottom, rgba( 116, 49, 50, 0) 0%, rgba( 116, 49, 50, 1) 100% ) ;
+    background-image: linear-gradient(to bottom, rgba(116, 49, 50, 0) 0%, rgba(116, 49, 50, 1) 100%);
     position: fixed;
     z-index: 50;
   }
@@ -121,7 +119,7 @@ svg {
   .navbar {
     &-dark {
       background-color: transparent;
-      background-image: linear-gradient( to bottom, rgba( 116, 49, 50, 0) 0%, rgba( 116, 49, 50, 1) 100% ) ;
+      background-image: linear-gradient(to bottom, rgba(116, 49, 50, 0) 0%, rgba(116, 49, 50, 1) 100%);
     }
   }
 }
@@ -130,35 +128,35 @@ svg {
   display: inline-block;
   margin: 0;
   text-align: center;
-  .toggle__item{
-      display: block;
-      float: left;
-      margin: 0;
-      padding: 0;
-      .toggle__button{
-          @extend .menu__link;
-          border-radius: 0;
-          background-color: rgba( 234, 215, 163, 1);
-          color: $primary;
-          font-size: 1em;
-          line-height: 2.5em;
-          min-width: 4em;
-          padding: 0 1em;
-          width: auto;
-          &.active {
-              box-shadow: inset 0 0 0 1px rgba( 234, 215, 163, 1);
-          }
+  .toggle__item {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    .toggle__button {
+      @extend .menu__link;
+      border-radius: 0;
+      background-color: rgba(234, 215, 163, 1);
+      color: $primary;
+      font-size: 1em;
+      line-height: 2.5em;
+      min-width: 4em;
+      padding: 0 1em;
+      width: auto;
+      &.active {
+        box-shadow: inset 0 0 0 1px rgba(234, 215, 163, 1);
       }
-      &:first-child {
-          .toggle__button {
-              border-radius: 1.25em 0 0 1.25em;
-          }
+    }
+    &:first-child {
+      .toggle__button {
+        border-radius: 1.25em 0 0 1.25em;
       }
-      &:last-child {
-          .toggle__button {
-              border-radius: 0 1.25em 1.25em 0;
-          }
+    }
+    &:last-child {
+      .toggle__button {
+        border-radius: 0 1.25em 1.25em 0;
       }
+    }
   }
 }
 
@@ -172,7 +170,7 @@ svg {
   flex-wrap: wrap;
   min-height: 100vh;
   &--home {
-    background-image: url( "images/jm__home_bg.jpg" );
+    background-image: url("images/jm__home_bg.jpg");
   }
   &--about {
     max-height: 100vh;
@@ -181,25 +179,32 @@ svg {
     scroll-snap-type: y mandatory;
     .content {
       &--procempa {
-        background-image: url( "images/jm__about_procempa.jpg" );
+        background-image: url("images/jm__about_procempa.jpg");
       }
       &--imarketing {
-        background-image: url( "images/jm__about_imarketing.jpg" );
+        background-image: url("images/jm__about_imarketing.jpg");
       }
       &--matheus {
-        background-image: url( "images/jm__about_matheus.jpg" );
+        background-image: url("images/jm__about_matheus.jpg");
       }
       &--outgreen {
-        background-image: url( "images/jm__about_outgreen.jpg" );
+        background-image: url("images/jm__about_outgreen.jpg");
       }
       &--woodoo {
-        background-image: url( "images/jm__about_woodoo.jpg" );
+        background-image: url("images/jm__about_woodoo.jpg");
       }
       &--elocc {
-        background-image: url( "images/jm__about_elocc.jpg" );
+        background-image: url("images/jm__about_elocc.jpg");
         .employer__avatar {
           background-color: #6f1987;
-          padding: .5rem;
+          padding: 0.5rem;
+        }
+      }
+      &--acct {
+        background-image: url("images/jm__about_acct.jpg");
+        .employer__avatar {
+          // background-color: #ffcc29;
+          padding: 0.5rem;
         }
       }
     }
@@ -208,7 +213,7 @@ svg {
 
 .content {
   // background-attachment: fixed;
-  background-size: cover ;
+  background-size: cover;
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
@@ -232,26 +237,26 @@ svg {
   height: 8em;
   width: 8em;
   img {
-      border-radius: 50%;
-      height: 100%;
-      width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
   }
 }
 
 .bio__text {
   color: $primary;
   p {
-      font-size: 1.25em;
+    font-size: 1.25em;
   }
 }
 
 .employer {
-  background-color: rgba( 116, 49, 50, .8 );
+  background-color: rgba(116, 49, 50, 0.8);
   padding-bottom: 3.5rem;
   position: relative;
   &__avatar {
     border-radius: 50%;
-    background-color: rgba( 255, 255, 255, 1 );
+    background-color: rgba(255, 255, 255, 1);
     display: block;
     margin: 0 auto;
     margin-top: -3em;
@@ -261,9 +266,9 @@ svg {
     left: 50%;
     width: 6em;
     img {
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
     }
   }
 }
