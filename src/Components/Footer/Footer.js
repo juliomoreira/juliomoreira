@@ -2,23 +2,24 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <nav className="navbar fixed-bottom navbar-dark">
-        <div className="container">
-          <p className="navbar-text mx-auto my-0">
-            <small>
-              Made with
-              <span className="icon icon_heart" title="Love">
-                &#10084;
-              </span>
-              for the world,{" "}
-              <a href="//github.com/juliomoreira/juliomoreira.github.io" target="_blank" rel="noopener noreferrer">
-                grab the code here
-              </a>
-              .
-            </small>
-          </p>
-        </div>
+    <footer className="w-100">
+      <nav className="flex flex-column justify-center h3 tc">
+        <p className="lh-copy f6">
+          Made with{" "}
+          <span role="img" aria-label="Heart">
+            🖤
+          </span>{" "}
+          for the world,{" "}
+          <a
+            className="no-underline black dim bb bl-0 bt-0 br-0 b--dotted"
+            href="//github.com/juliomoreira/juliomoreira.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            grab the code here
+          </a>
+          .
+        </p>
       </nav>
     </footer>
   );

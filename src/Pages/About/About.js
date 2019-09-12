@@ -4,6 +4,11 @@ import acct from "../../images/jm__employer--acct.png";
 import elocc from "../../images/jm__employer--elocc.jpg";
 import woodoo from "../../images/jm__employer--woodoo.jpg";
 import outgreen from "../../images/jm__employer--outgreen.jpg";
+
+import acct_bg from "../../images/jm__about_acct.jpg";
+import elocc_bg from "../../images/jm__about_elocc.jpg";
+import woodoo_bg from "../../images/jm__about_woodoo.jpg";
+import outgreen_bg from "../../images/jm__about_outgreen.jpg";
 // import matheus from "../../images/jm__employer--matheus.jpg";
 // import imarketing from "../../images/jm__employer--imarketing.jpg";
 // import procempa from "../../images/jm__employer--procempa.jpg";
@@ -11,35 +16,38 @@ import outgreen from "../../images/jm__employer--outgreen.jpg";
 const employers = [
   {
     slug: "acct",
-    name: "ACCT ",
-    tagline: "Apr 2019 – Present",
+    name: "ACCT | ACUPULA Consulting & Technology",
+    tagline: "Apr 2019 – Sep 2019",
     image: acct,
+    bg: acct_bg,
     description:
-      "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
+      "Fullstack E-Commerce development using VTEX IO in a Serverless development environment using mostly ReactJS (ES6/Typescript), NodeJS (Koa.js), GraphQL, Tachyons on an open-source collaborative fashion."
   },
   {
     slug: "elocc",
     name: "Elocc Creative Agency",
     tagline: "Apr 2018 – Apr 2019",
     image: elocc,
+    bg: elocc_bg,
     description:
-      "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
+      "Fullstack E-Commerce development using platforms like VTEX IO, MercadoShops and WooCommerce. Leading a team of 5 developers, using technologies like ReactJS (ES6), NodeJS (Express/Adonis), MongoDB, Bootstrap 4, Sass/Stylus also using Agile methods alongside GitFlow and SEMVER."
   },
   {
     slug: "woodoo",
     name: "Woodoo Oficina Web",
     tagline: "Oct 2011 – Feb 2019",
     image: woodoo,
+    bg: woodoo_bg,
     description:
-      "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
+      "Fullstack SPAs Development and UI/UX Design, using frameworks like AngularJS, ReactJS, Web Components, Laravel, WordPress, CodeIgniter in a multidisciplinary self-managed team. At Woodoo I’ve grown significantly as an UI/UX Designer and had the opportunity to design and prototype friendly user interfaces as wells as some offline projects doing branding and Graphic Design."
   },
   {
     slug: "outgreen",
     name: "Outgreen Creative Design",
     tagline: "Nov 2009 – Oct 2011",
     image: outgreen,
-    description:
-      "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
+    bg: outgreen_bg,
+    description: "Fullstack Development and Web Design building websites using Wordpress, jQuery, grid-systems, HTML5 and CSS."
   }
   // {
   //   slug: "matheus",
@@ -69,19 +77,21 @@ const employers = [
 
 const About = () => {
   return (
-    <article className="page page--about">
-      {employers.map(({ slug, image, name, tagline, description }) => (
-        <section className={`content content--${slug}`}>
-          <div className="employer">
-            <div className="container">
-              <div className="employer__avatar">
-                <img src={image} alt="" />
-              </div>
-              <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h2 className="employer__name">{name}</h2>
-                <h4 className="employer__tagline">{tagline}</h4>
-                <p className="employer__description">{description}</p>
-              </div>
+    <article className="w-100 flex flex-column flex-wrap items-center">
+      {employers.map(({ slug, image, name, tagline, description, bg }) => (
+        <section key={slug} className={`relative mb5 w-100 flex flex-column justify-end black`}>
+          <div className="cover" style={{ backgroundPosition: "center", backgroundImage: `url(${bg})` }}>
+            <div className="h5"></div>
+            <div className="h5"></div>
+          </div>
+          <div className="w-100 pv3 items-center flex flex-column">
+            <div className="mw6 tc center">
+              <p>
+                <img src={image} alt="" className="mw-100 mw4" />
+              </p>
+              <h2 className="employer__name">{name}</h2>
+              <h4 className="employer__tagline">{tagline}</h4>
+              <p className="lh-copy measure">{description}</p>
             </div>
           </div>
         </section>

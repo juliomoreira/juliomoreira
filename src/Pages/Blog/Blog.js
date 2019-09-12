@@ -1,21 +1,15 @@
 import React from "react";
 
-const Blog = () => {
-  return (
-    <div>
-      <section id="!/blog" className="page page_blog" title="Blog">
-        <div className="content-wrapper">
-          <div className="content">
-            <h1>Blog</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse dolorem hic, vero ex! Magni atque laudantium tempora, cupiditate dicta
-              deleniti aut autem molestias eum ipsum praesentium optio aspernatur, eos.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+const Blog = () => (
+  <section className="tc">
+    <h1>Blog</h1>
+    <p>
+      <span role="img" aria-label="Construction Sign">
+        🚧
+      </span>{" "}
+      Under construction...
+    </p>
+  </section>
+);
 
 export default Blog;

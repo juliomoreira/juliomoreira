@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <article className="w-100 min-vh-100 flex flex-column items-center justify-between sans-serif bg-white black">
           <Icons />
           <Header />
           <Route exact path="/" component={Home} />
@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/works" component={Works} />
           <Route path="/contact" component={Contact} />
           <Footer />
-        </div>
+        </article>
       </Router>
     );
   }
