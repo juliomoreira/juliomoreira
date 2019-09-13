@@ -9,15 +9,13 @@ import acct_bg from "../../images/jm__about_acct.jpg";
 import elocc_bg from "../../images/jm__about_elocc.jpg";
 import woodoo_bg from "../../images/jm__about_woodoo.jpg";
 import outgreen_bg from "../../images/jm__about_outgreen.jpg";
-// import matheus from "../../images/jm__employer--matheus.jpg";
-// import imarketing from "../../images/jm__employer--imarketing.jpg";
-// import procempa from "../../images/jm__employer--procempa.jpg";
+import SimpleLink from "../../Components/SimpleLink";
 
 const employers = [
   {
     slug: "acct",
     name: "ACCT | Acupula Consulting & Technology",
-    tagline: "Apr 2019 – Sep 2019",
+    tagline: "Apr 2019 - Sep 2019",
     image: acct,
     bg: acct_bg,
     description:
@@ -26,7 +24,7 @@ const employers = [
   {
     slug: "elocc",
     name: "Elocc Creative Agency",
-    tagline: "Apr 2018 – Apr 2019",
+    tagline: "Apr 2018 - Apr 2019",
     image: elocc,
     bg: elocc_bg,
     description:
@@ -35,7 +33,7 @@ const employers = [
   {
     slug: "woodoo",
     name: "Woodoo Oficina Web",
-    tagline: "Oct 2011 – Feb 2019",
+    tagline: "Oct 2011 - Feb 2019",
     image: woodoo,
     bg: woodoo_bg,
     description:
@@ -44,45 +42,28 @@ const employers = [
   {
     slug: "outgreen",
     name: "Outgreen Creative Design",
-    tagline: "Nov 2009 – Oct 2011",
+    tagline: "Nov 2009 - Oct 2011",
     image: outgreen,
     bg: outgreen_bg,
     description: "Fullstack Development and Web Design building websites using Wordpress, jQuery, grid-systems, HTML5 and CSS."
   }
-  // {
-  //   slug: "matheus",
-  //   name: "Studio Matheus Levi",
-  //   tagline: "2009 - 2011",
-  //   image: matheus,
-  //   description:
-  //     "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
-  // },
-  // {
-  //   slug: "imarketing",
-  //   name: "Imarketing Digital Business",
-  //   tagline: "2006 - 2008",
-  //   image: imarketing,
-  //   description:
-  //     "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
-  // },
-  // {
-  //   slug: "procempa",
-  //   name: "Procempa",
-  //   tagline: "2005 - 2006",
-  //   image: procempa,
-  //   description:
-  //     "Consequuntur perspiciatis modi atque ducimus nam provident recusandae accusamus, eveniet voluptatum quam. Cumque nesciunt repellendus dolore, facere fuga totam ipsa quam laborum."
-  // }
 ];
 
 const About = () => {
   return (
     <article className="w-100 flex flex-column flex-wrap items-center">
+      <header className="w-100 tc mb5">
+        <h1 className="lh-copy f1 fw5 serif">About</h1>
+        <p className="lh-copy">
+          These are some of the awesome places where I've worked. You can also check my{" "}
+          <SimpleLink href="//linkedin.com/in/hellojuliomoreira">LinkedIn</SimpleLink> for more information.
+        </p>
+      </header>
       {employers.map(({ slug, image, name, tagline, description, bg }) => (
         <section key={slug} className={`w-100 mb5 flex flex-column justify-end black`}>
           <div className="cover" style={{ backgroundPosition: "center", backgroundImage: `url(${bg})` }}>
             <div className="h5"></div>
-            <div className="h3 h5-ns"></div>
+            <div className="h2 h4-ns"></div>
           </div>
           <div className="w-100 ph3 pv3 items-center flex flex-column">
             <div className="mw8 center tc">
