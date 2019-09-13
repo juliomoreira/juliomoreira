@@ -1,4 +1,4 @@
-# [juliomoreira.pro (WIP)](juliomoreira.pro)
+# [juliomoreira.pro (WIP)](https://juliomoreira.pro)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f5ebae69-73a1-49de-9690-44aeb37defdb/deploy-status)](https://app.netlify.com/sites/juliomoreira/deploys)
 
@@ -8,5 +8,5 @@ This is the repository for my personal website which right now is a WIP and will
 
 Feel free to copy and do whatever you want with any of this stuff.
 
-If you feel like sharing your thoughts or maybe you have an idea drop me a line at: [hello@juliomoreir.pro](hello@juliomoreir.pro)
+If you feel like sharing your thoughts or maybe you have an idea drop me a line at: [hello@juliomoreira.pro](hello@juliomoreira.pro)
 
