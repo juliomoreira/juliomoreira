@@ -4,37 +4,32 @@ import { Link, withRouter } from "react-router-dom";
 const Header = props => {
   const { location: { pathname = "" } = {} } = props;
   return (
-    <header className="header w-100">
-      <nav className="flex justify-around items-center h5 pv3">
-        <Link to="/about" className="no-underline dim black w3 tc">
-          About
-        </Link>
-        <Link to="/works" className="no-underline dim black w3 tc">
-          Works
-        </Link>
-        <Link to="/" className={`no-underline dim black`}>
-          <svg viewBox="0 0 112 148" className={`w4 ${pathname !== "/" ? "h3" : "h4"}`}>
-            <use xlinkHref="#logo" />
-          </svg>
-        </Link>
-        <Link to="/blog" className="no-underline dim black w3 tc">
-          Blog
-        </Link>
-        <Link to="/contact" className="no-underline dim black w3 tc">
-          Contact
-        </Link>
-      </nav>
-      {/* <a href="#!/menu" className="menu-handler menu-handler_show" title="Show Menu">
-        <svg viewBox="0 0 16 12" className="icon icon-menu">
-          <use xlinkHref="#icon-menu" />
-        </svg>
-      </a>
-      <a href="#!/close-menu" className="menu-handler menu-handler_close" title="Close Menu">
-        <svg viewBox="0 0 16 12" className="icon icon-close">
-          <use xlinkHref="#icon-close" />
-        </svg>
-      </a> */}
+    <>
+    <header className={`w-100 ph3 ${pathname !== '/' ? 'fixed bg-white' : ''}`}>
+      <div className="mw8 center">
+        <nav className="flex justify-between items-center h4">
+          <Link to="/about" className="no-underline dim black">
+            About
+          </Link>
+          <Link to="/works" className="no-underline dim black">
+            Works
+          </Link>
+          <Link to="/" className={`no-underline dim black w3 tc pa2`}>
+            <svg viewBox="0 0 112 148" className={`mw-100 h-100`}>
+              <use xlinkHref="#logo" />
+            </svg>
+          </Link>
+          <Link to="/blog" className="no-underline dim black">
+            Blog
+          </Link>
+          <Link to="/contact" className="no-underline dim black">
+            Contact
+          </Link>
+        </nav>
+      </div>
     </header>
+    {pathname !== '/' ? <div className="w-100 h4"></div> : ''}
+    </>
   );
 };
 

@@ -16,7 +16,7 @@ import outgreen_bg from "../../images/jm__about_outgreen.jpg";
 const employers = [
   {
     slug: "acct",
-    name: "ACCT | ACUPULA Consulting & Technology",
+    name: "ACCT | Acupula Consulting & Technology",
     tagline: "Apr 2019 – Sep 2019",
     image: acct,
     bg: acct_bg,
@@ -79,18 +79,18 @@ const About = () => {
   return (
     <article className="w-100 flex flex-column flex-wrap items-center">
       {employers.map(({ slug, image, name, tagline, description, bg }) => (
-        <section key={slug} className={`relative mb5 w-100 flex flex-column justify-end black`}>
+        <section key={slug} className={`w-100 mb5 flex flex-column justify-end black`}>
           <div className="cover" style={{ backgroundPosition: "center", backgroundImage: `url(${bg})` }}>
             <div className="h5"></div>
-            <div className="h5"></div>
+            <div className="h3 h5-ns"></div>
           </div>
-          <div className="w-100 pv3 items-center flex flex-column">
-            <div className="mw6 tc center">
+          <div className="w-100 ph3 pv3 items-center flex flex-column">
+            <div className="mw8 center tc">
               <p>
                 <img src={image} alt="" className="mw-100 mw4" />
               </p>
-              <h2 className="employer__name">{name}</h2>
-              <h4 className="employer__tagline">{tagline}</h4>
+              <h3 className="lh-copy f3 fw4">{name}</h3>
+              <h5 className="dib ph3 pv2 ma0 lh-copy f5 fw5 mono bb bt bl-0 br-0 b--solid b--near-white">{tagline}</h5>
               <p className="lh-copy measure">{description}</p>
             </div>
           </div>
