@@ -1,6 +1,6 @@
 # [juliomoreira.pro (WIP)](https://juliomoreira.pro)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f5ebae69-73a1-49de-9690-44aeb37defdb/deploy-status)](https://app.netlify.com/sites/juliomoreira/deploys)
+[![Build Status](https://travis-ci.com/juliomoreira/juliomoreira.svg?branch=master)](https://travis-ci.com/juliomoreira/juliomoreira) [![Netlify Status](https://api.netlify.com/api/v1/badges/f5ebae69-73a1-49de-9690-44aeb37defdb/deploy-status)](https://app.netlify.com/sites/juliomoreira/deploys)
 
 ### 👋 Hello there! Internet surfer 🏄‍.
 
