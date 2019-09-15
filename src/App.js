@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Icons from "./Components/Icons/Icons";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+import Icons from "./Components/Icons";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
-import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Blog from "./Pages/Blog/Blog";
-import Works from "./Pages/Works/Works";
-import Contact from "./Pages/Contact/Contact";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Blog from "./Pages/Blog";
+import Works from "./Pages/Works";
+import Contact from "./Pages/Contact";
 
 class App extends Component {
   render() {

@@ -3,9 +3,10 @@ import { Link, withRouter } from "react-router-dom";
 
 const Header = props => {
   const { location: { pathname = "" } = {} } = props;
+  const isFixed = pathname !== "/";
   return (
     <>
-      <header className={`w-100 ph3 ${pathname !== "/" ? "fixed bg-white z-999" : ""}`}>
+      <header className={`w-100 ph3 ${isFixed ? "fixed bg-white z-999" : ""}`}>
         <div className="mw8 center">
           <nav className="flex justify-between items-center h4">
             <Link to="/about" className="no-underline dim black">
@@ -28,7 +29,7 @@ const Header = props => {
           </nav>
         </div>
       </header>
-      {pathname !== "/" ? <div className="w-100 h4"></div> : ""}
+      {isFixed ? <div className="w-100 h4"></div> : ""}
     </>
   );
 };
