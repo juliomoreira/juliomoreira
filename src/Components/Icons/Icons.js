@@ -2,17 +2,8 @@ import React from "react";
 
 const Icons = () => {
   return (
-    <svg className="svg-icons" style={{ display: "none" }}>
+    <svg className="dn">
       <defs>
-        <symbol id="icon-menu" viewBox="0 0 16 12">
-          <rect y="0" width="16" height="2" />
-          <rect y="5" width="16" height="2" />
-          <rect y="10" width="16" height="2" />
-        </symbol>
-        <symbol id="icon-close" viewBox="0 0 12.728 12.728">
-          <rect x="-1.636" y="5.364" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.636 6.364)" width="16" height="2" />
-          <rect x="-1.636" y="5.364" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.364 -2.636)" width="16" height="2" />
-        </symbol>
         <symbol id="logo" viewBox="0 0 112 148">
           <path
             d="M39.992,148c-0.747,0-1.5-0.02-2.262-0.059c-5.701-0.294-11.534-2.044-16.867-5.06
