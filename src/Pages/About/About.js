@@ -1,4 +1,5 @@
 import React from "react";
+import SimpleLink from "../../Components/SimpleLink";
 
 import acct from "../../images/jm__employer--acct.png";
 import elocc from "../../images/jm__employer--elocc.jpg";
@@ -9,7 +10,6 @@ import acct_bg from "../../images/jm__about_acct.jpg";
 import elocc_bg from "../../images/jm__about_elocc.jpg";
 import woodoo_bg from "../../images/jm__about_woodoo.jpg";
 import outgreen_bg from "../../images/jm__about_outgreen.jpg";
-import SimpleLink from "../../Components/SimpleLink";
 
 const employers = [
   {
