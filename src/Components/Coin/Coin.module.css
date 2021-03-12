@@ -1,16 +1,20 @@
 .coin {
-  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
 }
 
 .side {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 .sideA {
   z-index: 100;
 }
+
 .sideB {
+  transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
 }
 

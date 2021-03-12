@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
-const Header = props => {
-  const { location: { pathname = "" } = {} } = props;
+export const Header = () => {
+  const { location: { pathname = "" } = {} } = useHistory();
   const isFixed = pathname !== "/";
   return (
     <>
@@ -33,5 +33,3 @@ const Header = props => {
     </>
   );
 };
-
-export default withRouter(Header);

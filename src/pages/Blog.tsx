@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blog = () => (
+export const Blog = () => (
   <section className="w-100 ph3">
     <div className="mw8 center tc">
       <h1 className="lh-copy f1 serif fw5">Blog</h1>
@@ -13,5 +13,3 @@ const Blog = () => (
     </div>
   </section>
 );
-
-export default Blog;

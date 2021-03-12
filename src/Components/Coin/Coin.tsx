@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { MouseEventHandler, useState } from "react";
 
 import styles from "./Coin.module.css";
 
-const Coin = ({ heads, tails }) => {
+export interface CoinProps {
+  heads: JSX.Element;
+  tails: JSX.Element;
+}
+
+export const Coin: React.FC<CoinProps> = ({ heads, tails }) => {
   const [flipping, setFlipping] = useState(false);
   const [headsOrTails, setHeadsOrTails] = useState("");
-  const flipCoin = e => {
+  const flipCoin: MouseEventHandler<HTMLDivElement> = (e) => {
     e.stopPropagation();
     setFlipping(false);
     setHeadsOrTails("");
@@ -19,11 +24,14 @@ const Coin = ({ heads, tails }) => {
     }, 50);
   };
   return (
-    <div onClick={flipCoin} className={`relative w4 w5-ns h4 h5-ns center pointer ${styles.coin} ${flipping ? styles["coin--" + headsOrTails] : ""}`}>
+    <div
+      onClick={flipCoin}
+      className={`relative w4 w5-ns h4 h5-ns center pointer ${styles.coin} ${
+        flipping ? styles["coin--" + headsOrTails] : ""
+      }`}
+    >
       <div className={`absolute ${styles.sideA} ${styles.side}`}>{heads}</div>
       <div className={`absolute ${styles.sideB} ${styles.side}`}>{tails}</div>
     </div>
   );
 };
-
-export default Coin;
