@@ -4,7 +4,11 @@ import avatar_hover from "../images/avatar-hover.jpg";
 import avatar from "../images/avatar.jpg";
 
 const NAME = "Julio Moreira";
-const TITLE = "Designer & Developer";
+const TITLE = (
+  <>
+    <span className="strike">Designer</span> & Developer
+  </>
+);
 const HOMETOWN = "Porto Alegre, Brazil";
 const LOCATION = "Remotely";
 
@@ -24,7 +28,7 @@ export const Home = () => (
         >
           {LOCATION}
         </SimpleLink>{" "}
-        who loves making things for the web 🌐.
+        who loves making things for the web.
       </p>
       <p>
         <Button to="/about">Read more about him &rarr;</Button>
