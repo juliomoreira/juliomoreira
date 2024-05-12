@@ -4,12 +4,15 @@ import avatar_hover from "../images/avatar-hover.jpg";
 import avatar from "../images/avatar.jpg";
 
 const NAME = "Julio Moreira";
+
 const TITLE = (
   <>
     <span className="strike">Designer</span> & Developer
   </>
 );
+
 const HOMETOWN = "Porto Alegre, Brazil";
+
 const LOCATION = "Remotely";
 
 export const Home = () => (
@@ -20,11 +23,11 @@ export const Home = () => (
         tails={<img className="mw-100 br-100" src={avatar_hover} alt="" />}
       />
       <p className="lh-copy center measure">
-        <span className="b">{NAME}</span> is a {TITLE} from {HOMETOWN} currently
+        Hi, I'm <span className="b">{NAME}</span>, a {TITLE} from {HOMETOWN} currently
         working{" "}
         <SimpleLink
           external
-          to={`//google.com/maps/@-49.7609974,5.4545981,15529918m/data=!3m1!1e3`}
+          to={`//maps.app.goo.gl/UZoT8ww75cnZsvZx5`}
         >
           {LOCATION}
         </SimpleLink>{" "}
