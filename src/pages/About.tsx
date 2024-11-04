@@ -15,7 +15,7 @@ const employers = [
   {
     slug: "b8one",
     name: "b8one",
-    tagline: "Jul 2020 - Present",
+    tagline: "Jul 2020 - Oct 2021",
     image: b8one,
     bg: b8one_bg,
     description: (
