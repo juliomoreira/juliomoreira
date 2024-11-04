@@ -1,7 +1,5 @@
 import React from "react";
-import { Button, Coin, SimpleLink } from "../components";
-import avatar_hover from "../images/avatar-hover.jpg";
-import avatar from "../images/avatar.jpg";
+import { Button, SimpleLink } from "../components";
 
 const NAME = "Julio Moreira";
 
