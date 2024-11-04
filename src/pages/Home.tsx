@@ -18,10 +18,6 @@ const LOCATION = "Remotely";
 export const Home = () => (
   <section className="w-100 ph3">
     <div className="mw8 center tc">
-      <Coin
-        heads={<img className="mw-100 br-100" src={avatar} alt="" />}
-        tails={<img className="mw-100 br-100" src={avatar_hover} alt="" />}
-      />
       <p className="lh-copy center measure">
         Hi, I'm <span className="b">{NAME}</span>, a {TITLE} from {HOMETOWN} currently
         working{" "}
